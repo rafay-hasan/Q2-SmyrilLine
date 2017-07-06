@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FBD3A56EFC630D8619D9B1 /* Pods_SmyrilLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51A91D91AD7A82C79BCE1CE /* Pods_SmyrilLineTests.framework */; };
+		7CF004C922E69301DBC7A534 /* Pods_SmyrilLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5B25EA4450B07F37810B3B /* Pods_SmyrilLine.framework */; };
 		8492A0801F0CA4F000985C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492A07F1F0CA4F000985C63 /* AppDelegate.swift */; };
 		8492A0821F0CA4F000985C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492A0811F0CA4F000985C63 /* ViewController.swift */; };
 		8492A0851F0CA4F000985C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8492A0831F0CA4F000985C63 /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 		8492A0A31F0CA57700985C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8492A0A21F0CA57700985C63 /* Assets.xcassets */; };
 		8492A0A61F0CA5A800985C63 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492A0A51F0CA5A800985C63 /* MenuViewController.swift */; };
 		8492A0A81F0CA7A800985C63 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492A0A71F0CA7A800985C63 /* MenuCollectionViewCell.swift */; };
+		84C5F1061F0E0D2E00EBB709 /* TaxFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F1051F0E0D2E00EBB709 /* TaxFreeViewController.swift */; };
+		84C5F1081F0E0F4C00EBB709 /* StarshipHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */; };
+		84C5F10A1F0E142500EBB709 /* TaxFreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F1091F0E142500EBB709 /* TaxFreeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A5B25EA4450B07F37810B3B /* Pods_SmyrilLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmyrilLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F8076934B39B7118F267E3 /* Pods-SmyrilLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLineTests/Pods-SmyrilLineTests.release.xcconfig"; sourceTree = "<group>"; };
 		8492A07C1F0CA4F000985C63 /* SmyrilLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmyrilLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8492A07F1F0CA4F000985C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8492A0811F0CA4F000985C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +49,13 @@
 		8492A0A21F0CA57700985C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8492A0A51F0CA5A800985C63 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8492A0A71F0CA7A800985C63 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		84C5F1051F0E0D2E00EBB709 /* TaxFreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxFreeViewController.swift; sourceTree = "<group>"; };
+		84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarshipHeader.xib; sourceTree = "<group>"; };
+		84C5F1091F0E142500EBB709 /* TaxFreeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxFreeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8947A334D492C6914F1A8F3A /* Pods-SmyrilLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLineTests/Pods-SmyrilLineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine.debug.xcconfig"; sourceTree = "<group>"; };
+		A51A91D91AD7A82C79BCE1CE /* Pods_SmyrilLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmyrilLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE163FBA5DE90AAF0B7694ED /* Pods-SmyrilLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF004C922E69301DBC7A534 /* Pods_SmyrilLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +71,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FBD3A56EFC630D8619D9B1 /* Pods_SmyrilLineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0871F79BE714E500B4AB96B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A5B25EA4450B07F37810B3B /* Pods_SmyrilLine.framework */,
+				A51A91D91AD7A82C79BCE1CE /* Pods_SmyrilLineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8492A0731F0CA4F000985C63 = {
 			isa = PBXGroup;
 			children = (
 				8492A07E1F0CA4F000985C63 /* SmyrilLine */,
 				8492A0961F0CA4F100985C63 /* SmyrilLineTests */,
 				8492A07D1F0CA4F000985C63 /* Products */,
+				90C664406308F287C4028D8A /* Pods */,
+				0871F79BE714E500B4AB96B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +114,7 @@
 				8492A0811F0CA4F000985C63 /* ViewController.swift */,
 				8492A0A41F0CA59100985C63 /* Menu */,
 				8492A0831F0CA4F000985C63 /* Main.storyboard */,
+				84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */,
 				8492A0A21F0CA57700985C63 /* Assets.xcassets */,
 				8492A08B1F0CA4F000985C63 /* LaunchScreen.storyboard */,
 				8492A08E1F0CA4F000985C63 /* Info.plist */,
@@ -109,8 +137,21 @@
 			children = (
 				8492A0A51F0CA5A800985C63 /* MenuViewController.swift */,
 				8492A0A71F0CA7A800985C63 /* MenuCollectionViewCell.swift */,
+				84C5F1051F0E0D2E00EBB709 /* TaxFreeViewController.swift */,
+				84C5F1091F0E142500EBB709 /* TaxFreeCollectionViewCell.swift */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		90C664406308F287C4028D8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */,
+				AE163FBA5DE90AAF0B7694ED /* Pods-SmyrilLine.release.xcconfig */,
+				8947A334D492C6914F1A8F3A /* Pods-SmyrilLineTests.debug.xcconfig */,
+				33F8076934B39B7118F267E3 /* Pods-SmyrilLineTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8492A09C1F0CA4F100985C63 /* Build configuration list for PBXNativeTarget "SmyrilLine" */;
 			buildPhases = (
+				5168F2C4698C3180C937C0DD /* [CP] Check Pods Manifest.lock */,
 				8492A0781F0CA4F000985C63 /* Sources */,
 				8492A0791F0CA4F000985C63 /* Frameworks */,
 				8492A07A1F0CA4F000985C63 /* Resources */,
+				F38223272C3B5AE68B057123 /* [CP] Embed Pods Frameworks */,
+				528F5A8FC4C5884DBD82910A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8492A09F1F0CA4F100985C63 /* Build configuration list for PBXNativeTarget "SmyrilLineTests" */;
 			buildPhases = (
+				5E4D948491B8FE120A821594 /* [CP] Check Pods Manifest.lock */,
 				8492A08F1F0CA4F100985C63 /* Sources */,
 				8492A0901F0CA4F100985C63 /* Frameworks */,
 				8492A0911F0CA4F100985C63 /* Resources */,
+				D874389782F6C08BFE5F2A1B /* [CP] Embed Pods Frameworks */,
+				59777F79055553B3CB134A31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +246,7 @@
 			files = (
 				8492A08D1F0CA4F000985C63 /* LaunchScreen.storyboard in Resources */,
 				8492A0A31F0CA57700985C63 /* Assets.xcassets in Resources */,
+				84C5F1081F0E0F4C00EBB709 /* StarshipHeader.xib in Resources */,
 				8492A0851F0CA4F000985C63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,13 +260,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5168F2C4698C3180C937C0DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		528F5A8FC4C5884DBD82910A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59777F79055553B3CB134A31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmyrilLineTests/Pods-SmyrilLineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E4D948491B8FE120A821594 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D874389782F6C08BFE5F2A1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmyrilLineTests/Pods-SmyrilLineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F38223272C3B5AE68B057123 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8492A0781F0CA4F000985C63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C5F1061F0E0D2E00EBB709 /* TaxFreeViewController.swift in Sources */,
 				8492A0881F0CA4F000985C63 /* SmyrilLine.xcdatamodeld in Sources */,
 				8492A0821F0CA4F000985C63 /* ViewController.swift in Sources */,
+				84C5F10A1F0E142500EBB709 /* TaxFreeCollectionViewCell.swift in Sources */,
 				8492A0801F0CA4F000985C63 /* AppDelegate.swift in Sources */,
 				8492A0A61F0CA5A800985C63 /* MenuViewController.swift in Sources */,
 				8492A0A81F0CA7A800985C63 /* MenuCollectionViewCell.swift in Sources */,
@@ -360,6 +503,7 @@
 		};
 		8492A09D1F0CA4F100985C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79YLMQ62DM;
@@ -375,6 +519,7 @@
 		};
 		8492A09E1F0CA4F100985C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE163FBA5DE90AAF0B7694ED /* Pods-SmyrilLine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79YLMQ62DM;
@@ -390,6 +535,7 @@
 		};
 		8492A0A01F0CA4F100985C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8947A334D492C6914F1A8F3A /* Pods-SmyrilLineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -404,6 +550,7 @@
 		};
 		8492A0A11F0CA4F100985C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F8076934B39B7118F267E3 /* Pods-SmyrilLineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -435,6 +582,7 @@
 				8492A09E1F0CA4F100985C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8492A09F1F0CA4F100985C63 /* Build configuration list for PBXNativeTarget "SmyrilLineTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +591,7 @@
 				8492A0A11F0CA4F100985C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

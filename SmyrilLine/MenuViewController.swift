@@ -48,8 +48,8 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
         if let image = UIImage (named: self.itemImageNameArray[indexPath.row]) {
             cell.itemNameImageView.image = image
         }
-        //cell.containerView.layer.cornerRadius = 4
-        //cell.containerView.layer.masksToBounds = true
+        cell.containerView.layer.cornerRadius = 4
+        cell.containerView.layer.masksToBounds = true
         return cell
     }
     
@@ -74,7 +74,7 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
         {
         case 480:
             print("iPhone Classic")
-            let size = CGSize(width: 80, height: 108)
+            let size = CGSize(width: 80, height: 105)
             return size
         case 960:
             print("iPhone 4 or 4S")

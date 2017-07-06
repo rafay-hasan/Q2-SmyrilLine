@@ -74,7 +74,7 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
         {
         case 480:
             print("iPhone Classic")
-            let size = CGSize(width: 80, height: 107)
+            let size = CGSize(width: 80, height: 108)
             return size
         case 960:
             print("iPhone 4 or 4S")

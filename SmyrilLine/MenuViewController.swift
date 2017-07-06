@@ -48,8 +48,8 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
         if let image = UIImage (named: self.itemImageNameArray[indexPath.row]) {
             cell.itemNameImageView.image = image
         }
-        cell.containerView.layer.cornerRadius = 4
-        cell.containerView.layer.masksToBounds = true
+        //cell.containerView.layer.cornerRadius = 4
+        //cell.containerView.layer.masksToBounds = true
         return cell
     }
     

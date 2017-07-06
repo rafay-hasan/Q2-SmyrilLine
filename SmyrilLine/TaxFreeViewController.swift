@@ -10,19 +10,58 @@ import UIKit
 
 class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
+    
+    var myTaxFreeShop:[String:AnyObject]?
+    var myWebservice:WebServiceWrapper?
+    
        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
     
-
-
+    override func viewDidAppear(_ animated: Bool) {
+        super .viewDidAppear(true)
+        callTaxfreeWebservice()
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func callTaxfreeWebservice()   {
+        
+        let url = "\(baseUrl)TaxFreeShop/eng"
+        
+        self.myWebservice = WebServiceWrapper(api: "taxxx")
+        self.myWebservice.r
+        //print(self.myWebservice?.apiName)
+        //self.myWebservice = AFWrapper()
+//        AFWrapper.requestGETURL(url, success: { (jsonResponse) in
+//            
+//            self.myTaxFreeShop = jsonResponse.dictionaryValue as [String : AnyObject]
+//            let products = self.myTaxFreeShop?["children"]
+//            print(products)
+//            
+////            if let myDic = tempDic
+////            {
+////                print(myDic)
+////            }
+//            
+////            if let dictionary = jsonResponse as? [String: Any] {
+////                if let number = dictionary["someKey"] as? Double {
+////                    // access individual value in dictionary
+////                }
+////            }
+//            //self.taxFreeProducts = NSArray (array: jsonResponse) //jsonResponse["children"]
+//            //print(self.taxFreeProducts?["children"]!)
+//        }) { (jsonError) in
+//            print(jsonError.localizedDescription)
+//        }
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -36,7 +75,9 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return 5
+        //if let products = self.myTaxFreeShop["children"].coun
+        
+        return 10//(self.taxFreeProducts?.count)!
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell

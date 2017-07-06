@@ -21,6 +21,10 @@
 		84C5F1061F0E0D2E00EBB709 /* TaxFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F1051F0E0D2E00EBB709 /* TaxFreeViewController.swift */; };
 		84C5F1081F0E0F4C00EBB709 /* StarshipHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */; };
 		84C5F10A1F0E142500EBB709 /* TaxFreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F1091F0E142500EBB709 /* TaxFreeCollectionViewCell.swift */; };
+		84C5F10E1F0E318A00EBB709 /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F10D1F0E318A00EBB709 /* AFWrapper.swift */; };
+		84C5F1101F0E4FCD00EBB709 /* TaxFreeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F10F1F0E4FCD00EBB709 /* TaxFreeShop.swift */; };
+		84C5F1121F0E514C00EBB709 /* TaxFreeProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F1111F0E514C00EBB709 /* TaxFreeProducts.swift */; };
+		84C5F1141F0E5E6700EBB709 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F1131F0E5E6700EBB709 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		84C5F1051F0E0D2E00EBB709 /* TaxFreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxFreeViewController.swift; sourceTree = "<group>"; };
 		84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarshipHeader.xib; sourceTree = "<group>"; };
 		84C5F1091F0E142500EBB709 /* TaxFreeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxFreeCollectionViewCell.swift; sourceTree = "<group>"; };
+		84C5F10D1F0E318A00EBB709 /* AFWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
+		84C5F10F1F0E4FCD00EBB709 /* TaxFreeShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxFreeShop.swift; sourceTree = "<group>"; };
+		84C5F1111F0E514C00EBB709 /* TaxFreeProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxFreeProducts.swift; sourceTree = "<group>"; };
+		84C5F1131F0E5E6700EBB709 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		8947A334D492C6914F1A8F3A /* Pods-SmyrilLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLineTests/Pods-SmyrilLineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine.debug.xcconfig"; sourceTree = "<group>"; };
 		A51A91D91AD7A82C79BCE1CE /* Pods_SmyrilLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmyrilLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +120,9 @@
 			children = (
 				8492A07F1F0CA4F000985C63 /* AppDelegate.swift */,
 				8492A0811F0CA4F000985C63 /* ViewController.swift */,
+				84C5F10C1F0E30B700EBB709 /* Web service */,
 				8492A0A41F0CA59100985C63 /* Menu */,
+				84C5F10B1F0E309E00EBB709 /* Tax free */,
 				8492A0831F0CA4F000985C63 /* Main.storyboard */,
 				84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */,
 				8492A0A21F0CA57700985C63 /* Assets.xcassets */,
@@ -137,10 +147,28 @@
 			children = (
 				8492A0A51F0CA5A800985C63 /* MenuViewController.swift */,
 				8492A0A71F0CA7A800985C63 /* MenuCollectionViewCell.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		84C5F10B1F0E309E00EBB709 /* Tax free */ = {
+			isa = PBXGroup;
+			children = (
 				84C5F1051F0E0D2E00EBB709 /* TaxFreeViewController.swift */,
 				84C5F1091F0E142500EBB709 /* TaxFreeCollectionViewCell.swift */,
 			);
-			name = Menu;
+			name = "Tax free";
+			sourceTree = "<group>";
+		};
+		84C5F10C1F0E30B700EBB709 /* Web service */ = {
+			isa = PBXGroup;
+			children = (
+				84C5F10D1F0E318A00EBB709 /* AFWrapper.swift */,
+				84C5F1131F0E5E6700EBB709 /* WebService.swift */,
+				84C5F10F1F0E4FCD00EBB709 /* TaxFreeShop.swift */,
+				84C5F1111F0E514C00EBB709 /* TaxFreeProducts.swift */,
+			);
+			name = "Web service";
 			sourceTree = "<group>";
 		};
 		90C664406308F287C4028D8A /* Pods */ = {
@@ -358,13 +386,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C5F1141F0E5E6700EBB709 /* WebService.swift in Sources */,
 				84C5F1061F0E0D2E00EBB709 /* TaxFreeViewController.swift in Sources */,
 				8492A0881F0CA4F000985C63 /* SmyrilLine.xcdatamodeld in Sources */,
+				84C5F10E1F0E318A00EBB709 /* AFWrapper.swift in Sources */,
 				8492A0821F0CA4F000985C63 /* ViewController.swift in Sources */,
 				84C5F10A1F0E142500EBB709 /* TaxFreeCollectionViewCell.swift in Sources */,
 				8492A0801F0CA4F000985C63 /* AppDelegate.swift in Sources */,
 				8492A0A61F0CA5A800985C63 /* MenuViewController.swift in Sources */,
 				8492A0A81F0CA7A800985C63 /* MenuCollectionViewCell.swift in Sources */,
+				84C5F1101F0E4FCD00EBB709 /* TaxFreeShop.swift in Sources */,
+				84C5F1121F0E514C00EBB709 /* TaxFreeProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

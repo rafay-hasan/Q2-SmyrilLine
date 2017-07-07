@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireObjectMapper
 import SDWebImage
+import SVProgressHUD
 
 class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
@@ -20,6 +21,11 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        //self.taxFreeCollectionView.registerClass(TaxFreeCollectionReusableView(), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header")
+       // self.taxFreeCollectionView.register(UINib(nibName: "TaxfreeHeader", bundle:nil), forCellWithReuseIdentifier: "Header")
+
         
     }
     
@@ -38,10 +44,15 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
         
         let url = "\(baseUrl)TaxFreeShop/eng"
 
+        SVProgressHUD.show()
         Alamofire.request(url, method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
             .responseObject { (response: DataResponse<taxFreeShop>) in
                 self.myTaxFreeShop = response.result.value
+                
+                print(response.result.error?.localizedDescription ?? "Please try again later",response.result.isSuccess)
+                
                 self.taxFreeCollectionView.reloadData()
+                SVProgressHUD.dismiss()
         }
         
     }
@@ -72,9 +83,38 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
         var imageurl = imageBaseUrl
         imageurl += (self.myTaxFreeShop?.product?[indexPath.row].productImageUrlStr)!
         
-        cell.productImageView.sd_setImage(with: URL(string: imageurl), placeholderImage: UIImage(named: "placeholder.png"))
+        cell.productImageView.sd_setImage(with: URL(string: imageurl), placeholderImage: nil)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+            
+        case UICollectionElementKindSectionHeader:
+            
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as! TaxFreeCollectionReusableView
+            headerView.shopImageView.sd_setShowActivityIndicatorView(true)
+            headerView.shopImageView.sd_setIndicatorStyle(.gray)
+            let imageurl = imageBaseUrl
+            let shopImage = self.myTaxFreeShop?.imageUrlStr ?? ""
+            headerView.shopImageView.sd_setImage(with: URL(string: imageurl + shopImage), placeholderImage: nil)
+
+            
+            headerView.backgroundColor = UIColor.clear;
+            return headerView
+            
+//        case UICollectionElementKindSectionFooter:
+//            let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "Footer", forIndexPath: indexPath) as! UICollectionReusableView
+//            
+//            footerView.backgroundColor = UIColor.clear();
+//            return footerView
+            
+        default:
+            
+            assert(false, "Unexpected element kind")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize

@@ -8,6 +8,7 @@ target 'SmyrilLine' do
   pod 'SwiftyJSON'
   pod 'AlamofireObjectMapper', '~> 4.0'
   pod 'SDWebImage/WebP'
+  pod 'SVProgressHUD'
 
   # Pods for SmyrilLine
 

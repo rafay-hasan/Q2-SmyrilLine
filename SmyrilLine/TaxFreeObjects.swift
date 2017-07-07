@@ -24,7 +24,7 @@ class taxFreeShop: Mappable {
     func mapping(map: Map) {
         name    <- map["name"]
         imageUrlStr     <- map["imageUrl"]
-        details      <- map["name"]
+        details      <- map["header"]
         product <- map["children"]
     }
 }

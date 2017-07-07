@@ -23,9 +23,7 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
         // Do any additional setup after loading the view.
         
         
-        //self.taxFreeCollectionView.registerClass(TaxFreeCollectionReusableView(), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header")
-       // self.taxFreeCollectionView.register(UINib(nibName: "TaxfreeHeader", bundle:nil), forCellWithReuseIdentifier: "Header")
-
+        self.title = "Tax free shops"
         
     }
     
@@ -77,8 +75,8 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "taxFreeCell", for: indexPath) as! TaxFreeCollectionViewCell
         cell.productname.text = self.myTaxFreeShop?.product![indexPath.row].productName
-        cell.productDetails.text = self.myTaxFreeShop?.product![indexPath.row].productDetails
-        cell.productPrice.text = self.myTaxFreeShop?.product![indexPath.row].productPrice
+        cell.productDetails.text = self.myTaxFreeShop?.product![indexPath.row].productDescription
+        cell.productPrice.text = "$" + (self.myTaxFreeShop?.product?[indexPath.row].productPrice)!
         cell.productImageView.sd_setShowActivityIndicatorView(true)
         cell.productImageView.sd_setIndicatorStyle(.gray)
         var imageurl = imageBaseUrl

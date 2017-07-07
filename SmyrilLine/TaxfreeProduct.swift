@@ -14,6 +14,7 @@ class taxFreeProduct: Mappable {
     var productName: String?
     var productImageUrlStr: String?
     var productDetails: String?
+    var productDescription: String?
     var productPrice: String?
     
     
@@ -26,6 +27,7 @@ class taxFreeProduct: Mappable {
         productName    <- map["name"]
         productImageUrlStr     <- map["imageUrl"]
         productDetails      <- map["description"]
+        productDescription      <- map["header"]
         productPrice <- map["price"]
     }
 }

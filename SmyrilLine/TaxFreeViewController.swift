@@ -45,6 +45,7 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
         let url = "\(baseUrl)TaxFreeShop/eng"
 
         SVProgressHUD.show()
+        
         Alamofire.request(url, method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
             .responseObject { (response: DataResponse<taxFreeShop>) in
                 self.myTaxFreeShop = response.result.value

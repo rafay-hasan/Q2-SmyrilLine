@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireObjectMapper
+import SDWebImage
 
 class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
     
-    var myTaxFreeShop:[String:AnyObject]?
-    var myWebservice:WebServiceWrapper?
+    @IBOutlet weak var taxFreeCollectionView: UICollectionView!
+    var myTaxFreeShop:taxFreeShop?
     
        override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,32 +37,12 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
     func callTaxfreeWebservice()   {
         
         let url = "\(baseUrl)TaxFreeShop/eng"
-        
-        self.myWebservice = WebServiceWrapper(api: "taxxx")
-        self.myWebservice.r
-        //print(self.myWebservice?.apiName)
-        //self.myWebservice = AFWrapper()
-//        AFWrapper.requestGETURL(url, success: { (jsonResponse) in
-//            
-//            self.myTaxFreeShop = jsonResponse.dictionaryValue as [String : AnyObject]
-//            let products = self.myTaxFreeShop?["children"]
-//            print(products)
-//            
-////            if let myDic = tempDic
-////            {
-////                print(myDic)
-////            }
-//            
-////            if let dictionary = jsonResponse as? [String: Any] {
-////                if let number = dictionary["someKey"] as? Double {
-////                    // access individual value in dictionary
-////                }
-////            }
-//            //self.taxFreeProducts = NSArray (array: jsonResponse) //jsonResponse["children"]
-//            //print(self.taxFreeProducts?["children"]!)
-//        }) { (jsonError) in
-//            print(jsonError.localizedDescription)
-//        }
+
+        Alamofire.request(url, method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
+            .responseObject { (response: DataResponse<taxFreeShop>) in
+                self.myTaxFreeShop = response.result.value
+                self.taxFreeCollectionView.reloadData()
+        }
         
     }
 
@@ -75,14 +58,22 @@ class TaxFreeViewController: UIViewController,UICollectionViewDataSource,UIColle
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        //if let products = self.myTaxFreeShop["children"].coun
-        
-        return 10//(self.taxFreeProducts?.count)!
+        return self.myTaxFreeShop?.product?.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "taxFreeCell", for: indexPath) as! TaxFreeCollectionViewCell
+        cell.productname.text = self.myTaxFreeShop?.product![indexPath.row].productName
+        cell.productDetails.text = self.myTaxFreeShop?.product![indexPath.row].productDetails
+        cell.productPrice.text = self.myTaxFreeShop?.product![indexPath.row].productPrice
+        cell.productImageView.sd_setShowActivityIndicatorView(true)
+        cell.productImageView.sd_setIndicatorStyle(.gray)
+        var imageurl = imageBaseUrl
+        imageurl += (self.myTaxFreeShop?.product?[indexPath.row].productImageUrlStr)!
+        
+        cell.productImageView.sd_setImage(with: URL(string: imageurl), placeholderImage: UIImage(named: "placeholder.png"))
+        
         return cell
     }
     

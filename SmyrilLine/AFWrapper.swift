@@ -16,12 +16,6 @@ let imageBaseUrl = "http://stage-smy-wp.mcp.com:82"
 
 
 class AFWrapper: NSObject {
-    
-    var apiName:String
-    
-    init(apiName: String) {
-        self.apiName = apiName
-    }
 
     class func requestGETURL(_ strURL: String, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void) {
         Alamofire.request(strURL).responseJSON { (responseObject) -> Void in

@@ -192,6 +192,12 @@
                                             <constraint firstAttribute="bottom" secondItem="s8T-Lh-cZD" secondAttribute="bottom" id="wOo-Yb-WD5"/>
                                             <constraint firstItem="gyr-A9-Vs2" firstAttribute="top" secondItem="MZW-G4-EhM" secondAttribute="bottom" id="wjF-At-uEw"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="productDetails" destination="gyr-A9-Vs2" id="sZI-BX-EQj"/>
+                                            <outlet property="productImageView" destination="1V4-I9-4Vr" id="auj-zG-wwy"/>
+                                            <outlet property="productPrice" destination="Ske-i7-PTx" id="4dX-NW-vOf"/>
+                                            <outlet property="productname" destination="MZW-G4-EhM" id="t3n-k2-7au"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -208,6 +214,9 @@
                             <constraint firstItem="ktK-A7-9SJ" firstAttribute="leading" secondItem="vK3-vn-cZ1" secondAttribute="leading" id="bCz-wl-aXp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="taxFreeCollectionView" destination="ktK-A7-9SJ" id="Qp3-Vq-QKO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgH-b0-qsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

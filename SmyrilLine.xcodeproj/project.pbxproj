@@ -25,6 +25,10 @@
 		84F6CF941F0F7DA8003557CC /* TaxFreeObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6CF931F0F7DA8003557CC /* TaxFreeObjects.swift */; };
 		84F6CF961F0F893E003557CC /* TaxfreeProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6CF951F0F893E003557CC /* TaxfreeProduct.swift */; };
 		84F6CF981F0FAB73003557CC /* TaxFreeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F6CF971F0FAB73003557CC /* TaxFreeCollectionReusableView.swift */; };
+		BB81CCBC1F10E6A200107EEC /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCBB1F10E6A200107EEC /* RestaurantViewController.swift */; };
+		BB81CCBF1F10E89D00107EEC /* RestaurantObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCBE1F10E89D00107EEC /* RestaurantObject.swift */; };
+		BB81CCC11F10E95200107EEC /* MyRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCC01F10E95200107EEC /* MyRestaurant.swift */; };
+		BB81CCC31F10EA3600107EEC /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCC21F10EA3600107EEC /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine.debug.xcconfig"; sourceTree = "<group>"; };
 		A51A91D91AD7A82C79BCE1CE /* Pods_SmyrilLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmyrilLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE163FBA5DE90AAF0B7694ED /* Pods-SmyrilLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmyrilLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmyrilLine/Pods-SmyrilLine.release.xcconfig"; sourceTree = "<group>"; };
+		BB81CCBB1F10E6A200107EEC /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		BB81CCBE1F10E89D00107EEC /* RestaurantObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantObject.swift; sourceTree = "<group>"; };
+		BB81CCC01F10E95200107EEC /* MyRestaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRestaurant.swift; sourceTree = "<group>"; };
+		BB81CCC21F10EA3600107EEC /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 				84C5F10C1F0E30B700EBB709 /* Web service */,
 				8492A0A41F0CA59100985C63 /* Menu */,
 				84C5F10B1F0E309E00EBB709 /* Tax free */,
+				BB81CCBD1F10E6AF00107EEC /* Restaurant */,
 				8492A0831F0CA4F000985C63 /* Main.storyboard */,
 				84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */,
 				8492A0A21F0CA57700985C63 /* Assets.xcassets */,
@@ -167,6 +176,8 @@
 				84C5F10D1F0E318A00EBB709 /* AFWrapper.swift */,
 				84F6CF931F0F7DA8003557CC /* TaxFreeObjects.swift */,
 				84F6CF951F0F893E003557CC /* TaxfreeProduct.swift */,
+				BB81CCC01F10E95200107EEC /* MyRestaurant.swift */,
+				BB81CCBE1F10E89D00107EEC /* RestaurantObject.swift */,
 			);
 			name = "Web service";
 			sourceTree = "<group>";
@@ -180,6 +191,15 @@
 				33F8076934B39B7118F267E3 /* Pods-SmyrilLineTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB81CCBD1F10E6AF00107EEC /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				BB81CCBB1F10E6A200107EEC /* RestaurantViewController.swift */,
+				BB81CCC21F10EA3600107EEC /* RestaurantTableViewCell.swift */,
+			);
+			name = Restaurant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,12 +407,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C5F1061F0E0D2E00EBB709 /* TaxFreeViewController.swift in Sources */,
+				BB81CCBC1F10E6A200107EEC /* RestaurantViewController.swift in Sources */,
 				84F6CF961F0F893E003557CC /* TaxfreeProduct.swift in Sources */,
+				BB81CCBF1F10E89D00107EEC /* RestaurantObject.swift in Sources */,
 				8492A0881F0CA4F000985C63 /* SmyrilLine.xcdatamodeld in Sources */,
 				84C5F10E1F0E318A00EBB709 /* AFWrapper.swift in Sources */,
 				84F6CF981F0FAB73003557CC /* TaxFreeCollectionReusableView.swift in Sources */,
 				8492A0821F0CA4F000985C63 /* ViewController.swift in Sources */,
+				BB81CCC11F10E95200107EEC /* MyRestaurant.swift in Sources */,
 				84C5F10A1F0E142500EBB709 /* TaxFreeCollectionViewCell.swift in Sources */,
+				BB81CCC31F10EA3600107EEC /* RestaurantTableViewCell.swift in Sources */,
 				8492A0801F0CA4F000985C63 /* AppDelegate.swift in Sources */,
 				8492A0A61F0CA5A800985C63 /* MenuViewController.swift in Sources */,
 				8492A0A81F0CA7A800985C63 /* MenuCollectionViewCell.swift in Sources */,
@@ -537,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79YLMQ62DM;
 				INFOPLIST_FILE = SmyrilLine/Info.plist;
@@ -553,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE163FBA5DE90AAF0B7694ED /* Pods-SmyrilLine.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79YLMQ62DM;
 				INFOPLIST_FILE = SmyrilLine/Info.plist;

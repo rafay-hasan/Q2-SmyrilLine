@@ -82,7 +82,6 @@
                                             <outlet property="containerView" destination="tgY-rK-9n5" id="lOB-mi-mwX"/>
                                             <outlet property="itemNameImageView" destination="5Lo-bN-e4g" id="YuZ-q2-FPZ"/>
                                             <outlet property="itemNameLabel" destination="VjU-K3-TZe" id="wTV-qb-u4l"/>
-                                            <segue destination="xe6-no-PbL" kind="show" id="82h-uJ-24U"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -105,6 +104,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="5cc-dy-dWq"/>
+                    <connections>
+                        <segue destination="xe6-no-PbL" kind="show" identifier="taxFree" id="YZ0-7w-Nxd"/>
+                        <segue destination="JsO-6F-XfP" kind="show" identifier="restaurant" id="1Iw-Bw-oxG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,6 +292,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgH-b0-qsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-287.19999999999999" y="792.95352323838085"/>
+        </scene>
+        <!--Restaurant View Controller-->
+        <scene sceneID="ARx-i9-HZe">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="JsO-6F-XfP" customClass="RestaurantViewController" customModule="SmyrilLine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Yi-gK-t2X"/>
+                        <viewControllerLayoutGuide type="bottom" id="X4B-rm-kvp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n6m-YZ-Odg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="H3k-ma-vSE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="restaurantCell" id="ncT-WJ-atS" customClass="RestaurantTableViewCell" customModule="SmyrilLine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ncT-WJ-atS" id="Gec-eM-GJW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pdm-Ny-cfq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p45-8M-oNq">
+                                                    <rect key="frame" x="166" y="72.5" width="43.5" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="fBI-sp-fhi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pdm-Ny-cfq" firstAttribute="top" secondItem="Gec-eM-GJW" secondAttribute="top" id="Y4P-ax-Tdf"/>
+                                                <constraint firstAttribute="trailing" secondItem="pdm-Ny-cfq" secondAttribute="trailing" id="gDP-kc-pbJ"/>
+                                                <constraint firstItem="p45-8M-oNq" firstAttribute="centerY" secondItem="Gec-eM-GJW" secondAttribute="centerY" id="ghv-EI-cNA"/>
+                                                <constraint firstAttribute="bottom" secondItem="pdm-Ny-cfq" secondAttribute="bottom" id="iSx-16-0Fz"/>
+                                                <constraint firstItem="p45-8M-oNq" firstAttribute="centerX" secondItem="Gec-eM-GJW" secondAttribute="centerX" id="mLu-9B-NMd"/>
+                                                <constraint firstItem="pdm-Ny-cfq" firstAttribute="leading" secondItem="Gec-eM-GJW" secondAttribute="leading" id="v02-lE-wb8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="restaurantImageView" destination="pdm-Ny-cfq" id="1LL-AG-opN"/>
+                                            <outlet property="restaurantName" destination="p45-8M-oNq" id="QzF-Jg-h2u"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JsO-6F-XfP" id="RYf-Oo-f7F"/>
+                                    <outlet property="delegate" destination="JsO-6F-XfP" id="Yrh-hV-1hj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="H3k-ma-vSE" secondAttribute="trailing" id="91u-Lo-Eq4"/>
+                            <constraint firstItem="X4B-rm-kvp" firstAttribute="top" secondItem="H3k-ma-vSE" secondAttribute="bottom" id="EJH-2W-fL9"/>
+                            <constraint firstItem="H3k-ma-vSE" firstAttribute="top" secondItem="8Yi-gK-t2X" secondAttribute="bottom" id="g5c-lG-Nk6"/>
+                            <constraint firstItem="H3k-ma-vSE" firstAttribute="leading" secondItem="n6m-YZ-Odg" secondAttribute="leading" id="qPb-Gn-k93"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="restaurantTableview" destination="H3k-ma-vSE" id="bIm-5Q-t2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0x-wN-ke8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="793"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eo0-QF-8Kw">

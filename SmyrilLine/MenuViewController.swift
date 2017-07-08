@@ -27,15 +27,22 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+//        if segue.identifier == "taxFree"
+//        {
+//            var vc = segue.destination as? TaxFreeViewController
+//            
+//            
+//        }
     }
-    */
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
@@ -52,6 +59,19 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
         cell.containerView.layer.cornerRadius = 4
         cell.containerView.layer.masksToBounds = true
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        if self.itemNameArray[indexPath.row] == "Tax Free Shops"
+        {
+            self.performSegue(withIdentifier: "taxFree", sender: self)
+        }
+        else if self.itemNameArray[indexPath.row] == "Restaurants"
+        {
+            self.performSegue(withIdentifier: "restaurant", sender: self)
+        }
+
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets

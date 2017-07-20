@@ -29,7 +29,7 @@ class ShipInfoViewController: UIViewController,UICollectionViewDataSource,UIColl
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(true)
         callShipInfoWebservice()
-        
+        //callShipInfoWebservice()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

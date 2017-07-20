@@ -29,6 +29,19 @@
 		BB81CCBF1F10E89D00107EEC /* RestaurantObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCBE1F10E89D00107EEC /* RestaurantObject.swift */; };
 		BB81CCC11F10E95200107EEC /* MyRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCC01F10E95200107EEC /* MyRestaurant.swift */; };
 		BB81CCC31F10EA3600107EEC /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81CCC21F10EA3600107EEC /* RestaurantTableViewCell.swift */; };
+		BBAF85601F113C86001C1465 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF855F1F113C86001C1465 /* DestinationViewController.swift */; };
+		BBAF85631F113CA9001C1465 /* DestinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF85621F113CA9001C1465 /* DestinationTableViewCell.swift */; };
+		BBAF85651F113E28001C1465 /* DestinationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF85641F113E28001C1465 /* DestinationObject.swift */; };
+		BBAF85681F1146A6001C1465 /* ShipInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF85671F1146A6001C1465 /* ShipInfoViewController.swift */; };
+		BBAF856A1F114752001C1465 /* ShipInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF85691F114752001C1465 /* ShipInfoObject.swift */; };
+		BBAF856C1F1148B9001C1465 /* ShipInfoCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF856B1F1148B9001C1465 /* ShipInfoCollectionReusableView.swift */; };
+		BBAF856E1F1149DD001C1465 /* ShipInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF856D1F1149DD001C1465 /* ShipInfoCollectionViewCell.swift */; };
+		BBFB53871F11F86F006B2A42 /* DestinationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB53861F11F86F006B2A42 /* DestinationDetailsViewController.swift */; };
+		BBFB53891F11FC3D006B2A42 /* DestinationDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB53881F11FC3D006B2A42 /* DestinationDetailsCollectionViewCell.swift */; };
+		BBFB538B1F11FC54006B2A42 /* DestinationDetailsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB538A1F11FC54006B2A42 /* DestinationDetailsCollectionReusableView.swift */; };
+		BBFB538D1F120621006B2A42 /* ShipInfoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB538C1F120621006B2A42 /* ShipInfoDetailsViewController.swift */; };
+		BBFB538F1F1207A6006B2A42 /* ShipInfoHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB538E1F1207A6006B2A42 /* ShipInfoHeaderTableViewCell.swift */; };
+		BBFB53911F1207BE006B2A42 /* ShipInfoDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB53901F1207BE006B2A42 /* ShipInfoDetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +85,19 @@
 		BB81CCBE1F10E89D00107EEC /* RestaurantObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantObject.swift; sourceTree = "<group>"; };
 		BB81CCC01F10E95200107EEC /* MyRestaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRestaurant.swift; sourceTree = "<group>"; };
 		BB81CCC21F10EA3600107EEC /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		BBAF855F1F113C86001C1465 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		BBAF85621F113CA9001C1465 /* DestinationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableViewCell.swift; sourceTree = "<group>"; };
+		BBAF85641F113E28001C1465 /* DestinationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationObject.swift; sourceTree = "<group>"; };
+		BBAF85671F1146A6001C1465 /* ShipInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoViewController.swift; sourceTree = "<group>"; };
+		BBAF85691F114752001C1465 /* ShipInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoObject.swift; sourceTree = "<group>"; };
+		BBAF856B1F1148B9001C1465 /* ShipInfoCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoCollectionReusableView.swift; sourceTree = "<group>"; };
+		BBAF856D1F1149DD001C1465 /* ShipInfoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBFB53861F11F86F006B2A42 /* DestinationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailsViewController.swift; sourceTree = "<group>"; };
+		BBFB53881F11FC3D006B2A42 /* DestinationDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBFB538A1F11FC54006B2A42 /* DestinationDetailsCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailsCollectionReusableView.swift; sourceTree = "<group>"; };
+		BBFB538C1F120621006B2A42 /* ShipInfoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoDetailsViewController.swift; sourceTree = "<group>"; };
+		BBFB538E1F1207A6006B2A42 /* ShipInfoHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		BBFB53901F1207BE006B2A42 /* ShipInfoDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipInfoDetailsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +157,8 @@
 				84C5F10C1F0E30B700EBB709 /* Web service */,
 				8492A0A41F0CA59100985C63 /* Menu */,
 				84C5F10B1F0E309E00EBB709 /* Tax free */,
+				BBAF85661F11468A001C1465 /* Ship Info */,
+				BBAF85611F113C8B001C1465 /* Destination */,
 				BB81CCBD1F10E6AF00107EEC /* Restaurant */,
 				8492A0831F0CA4F000985C63 /* Main.storyboard */,
 				84C5F1071F0E0F4C00EBB709 /* StarshipHeader.xib */,
@@ -178,6 +206,8 @@
 				84F6CF951F0F893E003557CC /* TaxfreeProduct.swift */,
 				BB81CCC01F10E95200107EEC /* MyRestaurant.swift */,
 				BB81CCBE1F10E89D00107EEC /* RestaurantObject.swift */,
+				BBAF85641F113E28001C1465 /* DestinationObject.swift */,
+				BBAF85691F114752001C1465 /* ShipInfoObject.swift */,
 			);
 			name = "Web service";
 			sourceTree = "<group>";
@@ -200,6 +230,31 @@
 				BB81CCC21F10EA3600107EEC /* RestaurantTableViewCell.swift */,
 			);
 			name = Restaurant;
+			sourceTree = "<group>";
+		};
+		BBAF85611F113C8B001C1465 /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF855F1F113C86001C1465 /* DestinationViewController.swift */,
+				BBAF85621F113CA9001C1465 /* DestinationTableViewCell.swift */,
+				BBFB53861F11F86F006B2A42 /* DestinationDetailsViewController.swift */,
+				BBFB53881F11FC3D006B2A42 /* DestinationDetailsCollectionViewCell.swift */,
+				BBFB538A1F11FC54006B2A42 /* DestinationDetailsCollectionReusableView.swift */,
+			);
+			name = Destination;
+			sourceTree = "<group>";
+		};
+		BBAF85661F11468A001C1465 /* Ship Info */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF85671F1146A6001C1465 /* ShipInfoViewController.swift */,
+				BBAF856D1F1149DD001C1465 /* ShipInfoCollectionViewCell.swift */,
+				BBAF856B1F1148B9001C1465 /* ShipInfoCollectionReusableView.swift */,
+				BBFB538C1F120621006B2A42 /* ShipInfoDetailsViewController.swift */,
+				BBFB538E1F1207A6006B2A42 /* ShipInfoHeaderTableViewCell.swift */,
+				BBFB53901F1207BE006B2A42 /* ShipInfoDetailsTableViewCell.swift */,
+			);
+			name = "Ship Info";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,21 +461,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAF856E1F1149DD001C1465 /* ShipInfoCollectionViewCell.swift in Sources */,
 				84C5F1061F0E0D2E00EBB709 /* TaxFreeViewController.swift in Sources */,
 				BB81CCBC1F10E6A200107EEC /* RestaurantViewController.swift in Sources */,
 				84F6CF961F0F893E003557CC /* TaxfreeProduct.swift in Sources */,
+				BBAF85651F113E28001C1465 /* DestinationObject.swift in Sources */,
+				BBFB53871F11F86F006B2A42 /* DestinationDetailsViewController.swift in Sources */,
 				BB81CCBF1F10E89D00107EEC /* RestaurantObject.swift in Sources */,
 				8492A0881F0CA4F000985C63 /* SmyrilLine.xcdatamodeld in Sources */,
+				BBAF856A1F114752001C1465 /* ShipInfoObject.swift in Sources */,
+				BBFB538D1F120621006B2A42 /* ShipInfoDetailsViewController.swift in Sources */,
 				84C5F10E1F0E318A00EBB709 /* AFWrapper.swift in Sources */,
+				BBFB538B1F11FC54006B2A42 /* DestinationDetailsCollectionReusableView.swift in Sources */,
 				84F6CF981F0FAB73003557CC /* TaxFreeCollectionReusableView.swift in Sources */,
 				8492A0821F0CA4F000985C63 /* ViewController.swift in Sources */,
+				BBFB53911F1207BE006B2A42 /* ShipInfoDetailsTableViewCell.swift in Sources */,
+				BBAF856C1F1148B9001C1465 /* ShipInfoCollectionReusableView.swift in Sources */,
 				BB81CCC11F10E95200107EEC /* MyRestaurant.swift in Sources */,
 				84C5F10A1F0E142500EBB709 /* TaxFreeCollectionViewCell.swift in Sources */,
 				BB81CCC31F10EA3600107EEC /* RestaurantTableViewCell.swift in Sources */,
+				BBAF85631F113CA9001C1465 /* DestinationTableViewCell.swift in Sources */,
+				BBAF85601F113C86001C1465 /* DestinationViewController.swift in Sources */,
 				8492A0801F0CA4F000985C63 /* AppDelegate.swift in Sources */,
 				8492A0A61F0CA5A800985C63 /* MenuViewController.swift in Sources */,
+				BBFB53891F11FC3D006B2A42 /* DestinationDetailsCollectionViewCell.swift in Sources */,
+				BBAF85681F1146A6001C1465 /* ShipInfoViewController.swift in Sources */,
 				8492A0A81F0CA7A800985C63 /* MenuCollectionViewCell.swift in Sources */,
 				84F6CF941F0F7DA8003557CC /* TaxFreeObjects.swift in Sources */,
+				BBFB538F1F1207A6006B2A42 /* ShipInfoHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +629,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C9101CE0B5A401E7A67C571 /* Pods-SmyrilLine.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79YLMQ62DM;
 				INFOPLIST_FILE = SmyrilLine/Info.plist;
@@ -578,7 +646,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE163FBA5DE90AAF0B7694ED /* Pods-SmyrilLine.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79YLMQ62DM;
 				INFOPLIST_FILE = SmyrilLine/Info.plist;

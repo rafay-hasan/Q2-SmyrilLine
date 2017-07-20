@@ -71,6 +71,14 @@ class MenuViewController: UIViewController,UICollectionViewDelegate,UICollection
         {
             self.performSegue(withIdentifier: "restaurant", sender: self)
         }
+        else if self.itemNameArray[indexPath.row] == "Destinations"
+        {
+            self.performSegue(withIdentifier: "destinations", sender: self)
+        }
+        else if self.itemNameArray[indexPath.row] == "Ship Info"
+        {
+            self.performSegue(withIdentifier: "shipInfo", sender: self)
+        }
 
     }
     
